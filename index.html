@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richards Phone Solutions</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family: 'Poppins', sans-serif;}
+
+      body {background:#0b0f19;color:#fff;scroll-behavior:smooth;}
+
+
+    header {
+      position:fixed;width:100%;top:0;z-index:1000;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:15px 40px;background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(10px);
+    }
+
+    header h1 {color:#00e5ff;}
+
+    nav a {
+      margin:0 15px;color:#fff;text-decoration:none;transition:.3s;
+    }
+
+    nav a:hover {color:#00e5ff;}
+
+    .menu-toggle {display:none;font-size:24px;cursor:pointer;}
+
+    section {padding:100px 40px;}
+
+    .hero {
+      height:100vh;display:flex;flex-direction:column;
+      justify-content:center;align-items:center;text-align:center;
+      background-image: url(background.jpg);
+      height: 700px;
+      width: 100%;
+      background-size: cover;
+      letter-spacing: 1.5;
+    }
+
+    .hero h2 {font-size:3rem;margin-bottom:20px;}
+    .hero p {max-width:600px;margin-bottom:30px;opacity:.8;}
+
+    .btn {
+      padding:12px 25px;border:none;border-radius:30px;
+      background:linear-gradient(45deg,#00e5ff,#7c3aed);
+      color:#000;cursor:pointer;transition:.3s;
+    }
+
+    .btn:hover {transform:scale(1.05);}
+
+    .about {
+      display:grid;grid-template-columns:1fr 1fr;gap:30px;
+      align-items:center;
+    }
+
+    .about img {width:100%;border-radius:20px;}
+
+    .services .cards {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;
+    }
+
+    .card {
+      background:rgba(255,255,255,0.05);
+      padding:25px;border-radius:15px;text-align:center;
+      transition:.3s;
+    }
+
+    .card i {font-size:40px;margin-bottom:15px;color:#00e5ff;}
+
+    .card:hover {transform:translateY(-10px);background:rgba(0,229,255,0.1);}
+
+    .contact form {
+      display:flex;flex-direction:column;max-width:500px;margin:auto;
+    }
+
+    input, textarea {
+      margin:10px 0;
+      padding:12px;
+      border:none;
+      border-radius:10px;
+      background:#1f2937;color:#fff;
+    }
+
+    input:focus, textarea:focus {outline:2px solid #00e5ff;}
+
+    .socials {
+      text-align:center;margin-top:20px;
+    }
+
+    .socials a {
+      margin:0 10px;font-size:22px;color:#fff;transition:.3s;
+    }
+
+    .socials a:hover {color:#00e5ff;}
+
+    .location {
+      text-align:center;
+      margin-top:60px;
+    }
+
+    .location iframe {
+      width:100%;
+      max-width:800px;
+      height:300px;
+      border:0;
+      border-radius:15px;
+      margin-top:20px;
+    }
+
+    .phone {
+      text-align:center;
+      margin-top:20px;
+    }
+
+    .phone a {
+      color:#00e5ff;
+      font-size:18px;
+      text-decoration:none;
+    }
+
+    footer {
+      text-align:center;padding:20px;background:#111827;margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .about {grid-template-columns:1fr;}
+      nav {display:none;flex-direction:column;background:#111827;position:absolute;top:60px;right:0;width:200px;padding:20px;}
+      nav.active {display:flex;}
+      .menu-toggle {display:block;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1> Richards Phone Solutions</h1>
+  <i class="fas fa-bars menu-toggle"></i>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#Location">Location</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Smart Devices. Smarter Living.</h2>
+  <p>Your trusted source for quality phones, accessories, and repairs.In association with Yahwe Property Consultants Ltd</p>
+  <p>Click here <i class="fa-solid fa-arrow-down"></i></p>
+ <button class="btn">
+  <a href="index2.html" target="_blank">Yahwe Property Consultants</a></button>
+</section>
+
+<section class="about">
+  <img src="ceo.jpg" alt="CEO">
+  <div>
+    <h2>About the CEO</h2>
+    <p>Richard is a passionate tech entrepreneur dedicated to delivering top-quality mobile devices and services. His vision is to make technology accessible and reliable for everyone. He has been in the tech market since 2013. Having have been associative with well established suppliers from different countries, for example China, UAE, South Korea, RPS is the trusted store for all your mobile Phone and all day to day Accessories.</p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2 style="text-align:center;margin-bottom:30px;">Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Phone Sales</h3>
+      <p> <hr>Latest smartphones at affordable prices.</p> 
+        <details> 
+          <Summary>Read more</Summary>
+          <p> At Richards Phone Solutions, we provide the best quality phones across all major brands, carefully selected to meet the diverse needs of our customers. Our range includes the latest smartphones as well as reliable budget-friendly options, ensuring that every customer finds a device that suits their lifestyle, preferences, and budget.
+
+We are committed to offering authentic products sourced from trusted suppliers, guaranteeing performance, durability, and up-to-date technology. Each device is thoroughly checked to meet quality standards before reaching our customers, giving you confidence in every purchase. Whether for personal use, business, or everyday communication, Richards Phone Solutions delivers dependable mobile devices backed by professionalism, integrity, and customer-focused service</p>
+ </details>   
+</div>
+    <div class="card">
+      <i class="fas fa-headphones"></i>
+      <h3>Accessories</h3>
+      <p>Chargers, earphones, cases and more. </p>
+      <details> 
+        <summary>Read More</summary>
+        <p>At Richards Phone Solutions, we offer the best accessories from some of the most reputable and trusted suppliers in the industry, ensuring our customers receive products that meet high standards of quality, durability, and performance. Our collection includes a wide range of essential mobile accessories such as chargers, earphones, phone cases, screen protectors, power banks, and other smart device add-ons, all carefully selected to complement modern mobile technology.
+
+We prioritize reliability and customer satisfaction by sourcing accessories that are not only functional but also stylish and long-lasting. Each product is designed to enhance the user experience, providing convenience, protection, and efficiency in everyday use. With a strong commitment to quality assurance and affordability, Richards Phone Solutions stands as a dependable destination for premium mobile accessories that suit both personal and professional needs.</p>
+ </details>   
+</div>
+    <div class="card">
+      <i class="fas fa-tools"></i>
+      <h3>Repairs</h3>
+      <p>Professional repair services for all devices.</p>
+      <details>
+        <summary>Read More</summary>
+        <p>At Richards Phone Solutions, we offer extensive phone repair and maintenance services designed to restore your device to optimal performance with efficiency and precision. Our team handles a wide range of issues, including screen replacements, battery repairs, charging faults, software troubleshooting, and hardware diagnostics, ensuring that every device receives expert attention.
+
+We are committed to using high-quality replacement parts and modern repair techniques to guarantee durability and reliability. Our services are fast, affordable, and customer-focused, minimizing downtime while maintaining the highest standards of workmanship. Whether your device has a minor issue or requires complex repairs, Richards Phone Solutions provides dependable solutions tailored to meet your needs.</p>
+      </details>
+    </div>
+    <div class="card">
+      <i class="fas fa-unlock"></i>
+      <h3>Unlocking</h3>
+      <p>Software updates and unlocking services.</p>
+      <details>
+        <summary>Read More</summary>
+        <p>At Richards Phone Solutions, we provide professional software updates and phone unlocking services for both Android and iPhone devices, ensuring your device operates at its full potential. Our services are designed to enhance performance, improve security, and keep your device up to date with the latest features and system enhancements.
+
+We handle unlocking solutions with precision and reliability, enabling devices to function across different networks while maintaining their integrity and security. Our technicians use trusted methods and up-to-date tools to ensure safe and efficient service delivery. Whether you need system upgrades, bug fixes, or network unlocking, Richards Phone Solutions guarantees a seamless and dependable experience tailored to meet your needs</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 style="text-align:center;">Contact RPS</h2>
+
+  <form action="mailto:pankidee256@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button class="btn">Send Message</button>
+  </form>
+
+  <!-- PHONE SECTION -->
+  <div class="phone">
+    <h3>Call Us</h3>
+    <a href="tel:+256781915567">📞 +256 781915567</a>
+    
+  <div class="socials">
+    <a href="https://wa.me/0759915567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/eyour-usernam" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/@richards.rps" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://x.com/your-username" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="mailto:pankidee256@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+  </div>
+
+  <!-- LOCATION SECTION -->
+  <div class="location" id="Location">
+    <h3>Our Location</h3>
+    <p>We are located in Elegu-7th street, Pentagon House. Elegu-Nimule Border, Uganda. Visit our shop for the best phone deals and accessories.</p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Elegu,Uganda&output=embed"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</section>
+
+<footer>
+  <p><i>For we walk by faith not by sight</i></p>
+ <p> © 2026 Richards Phone Solutions. All rights reserved.
+</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.onclick = () => {
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
